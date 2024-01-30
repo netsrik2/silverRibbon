@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* architecture */
+/* .l-: layouts
+.o-: objects
+.c-: components
+.js: JavaScript hooks
+.is-|.has-: state classes
+.t1|.s1: typography sizes
+.u-: utility classes */
+
+/* ----------------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&family=Merriweather:ital,wght@0,300;0,400;1,400&display=swap');
+
+/* ----------------------------------------------------------------------------------- */
+
+/* basic groundwork */
+/* !! NORMALISING STILL NEEDED */
+
+
+/* box-sizing */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* visibility */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* custom properties */
+
+/* color jottings */
+/* darks */
+/* (gradient) #6A5435 #A08867*/
+/* deep green #00260f slightly lighter green #1E4D34 mauve #480049 #6F5912 mid khaki pale pink #eccbe2 */
+/* #262d3d */
+/* lights */
+/* #f2f6f8; */
+/* accent */
+/* #1CBAAA */
+/* fonts */
+/* font-family: 'Merriweather Sans', sans-serif; */
+/* font-family: 'Elsie Swash Caps', serif; */
+/* font-family: 'Fraunces', serif; */
+/* font-family: 'Redressed', cursive; */
+
+:root {
+  /* colors */
+  --color-primary: #010101;
+  --color-text: #eff2ef;
+  /* fonts */
+  --display-text: 'Merriweather', serif;
+  --body-text: 'Merriweather Sans', sans-serif;
+  /* typography */
+  --temp-fluid-type: calc(16px + 0.5vw);
+}
+
+/* colors */
+/* darks */
+/* (gradient) #6A5435 #A08867*/
+/* deep green #00260f slightly lighter green #1E4D34 mauve #480049 #6F5912 mid khaki pale pink #eccbe2 */
+/* #262d3d */
+/* lights */
+/* #f2f6f8; */
+/* accent */
+/* #1CBAAA */
+/* fonts */
+/* font-family: 'Merriweather Sans', sans-serif; */
+/* font-family: 'Elsie Swash Caps', serif; */
+/* font-family: 'Fraunces', serif; */
+/* font-family: 'Redressed', cursive; */
+
+
+html {
+  padding-top: 2em;
+  font-size: var(--temp-fluid-type);
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  font-family: var(--body-text);
+
+  max-width: 42em;
+  margin: auto;
+}
+
+a#skip-link {
+  position: fixed;
+  top: -30em;
+  left: 0;
+  right: 0;
+  z-index: 20;}
+
+a {
+  color: var(--body-text);
+}
+
+header {
+  text-align: center;
+  /* color: f2f6f8; */
+}
+
+header a {
+  text-decoration: none;
+}
+
+/* lists */
+
+.site-nav__list {
+  list-style: none;
+}
